@@ -3,7 +3,6 @@
 Module that solves the N Queens puzzle
 '''
 
-
 import sys
 
 
