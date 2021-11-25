@@ -2,7 +2,10 @@
 '''
 Module that solves the N Queens puzzle
 '''
-from sys import argv, exit
+
+
+import sys
+
 
 if __name__ == "__main__":
     if len(argv) != 2:
