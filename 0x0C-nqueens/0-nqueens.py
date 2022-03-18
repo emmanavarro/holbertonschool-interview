@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Module for 0x0C. N Queens
+Module for 0x0C. N Queens.
 """
 from sys import argv, exit
 
