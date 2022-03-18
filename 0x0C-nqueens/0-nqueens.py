@@ -1,23 +1,27 @@
 #!/usr/bin/python3
-'''
-Module that solves the N Queens problem
-'''
+"""
+Program that solves the N queens problem
+"""
+
 
 import sys
 
 
 if __name__ == "__main__":
     if len(sys.argv) != 2:
-        print('Usage: nqueens N')
+        print("Usage: nqueens N")
         sys.exit(1)
-    N = sys.argv[1]
-    if N.isdigit() is not True:
-        print('N must be a number')
+
+    try:
+        N = int(sys.argv[1])
+    except ValueError:
+        print("N must be a number")
         sys.exit(1)
-    N = int(N)
+
     if N < 4:
-        print('N must be at least 4')
+        print("N must be at least 4")
         sys.exit(1)
+
 
 def backtracking(N, i=0, a=[], b=[], c=[]):
     """Generates backtracking solutions for N queens problem"""
