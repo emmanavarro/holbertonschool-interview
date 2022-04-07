@@ -1,5 +1,4 @@
 #!/usr/bin/node
-
 const id = process.argv.slice(2);
 const url = `https://swapi-api.hbtn.io/api/films/${id[0]}/`;
 
