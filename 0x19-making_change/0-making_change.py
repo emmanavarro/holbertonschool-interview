@@ -23,12 +23,12 @@ def makeChange(coins, total):
     cpy_total = total
     len_coins = len(coins)
 
-    while(i < len_coins and cpy_total > 0):
+    while(itr < len_coins and cpy_total > 0):
         if (cpy_total - coins[itr]) >= 0:
             cpy_total -= coins[itr]
             ncoins += 1
         else:
-            i += 1
+            itr += 1
 
     check = cpy_total > 0 and ncoins > 0
     return -1 if check or ncoins == 0 else ncoins
