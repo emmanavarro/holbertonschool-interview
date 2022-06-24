@@ -1,19 +1,11 @@
 #!/usr/bin/python3
 """
-Make change module
+Solution of the problem
 """
 
 
 def makeChange(coins, total):
-    """
-    Given a pile of coins of different values,
-    determine the fewest number of coins
-    needed to meet a given amount 'total'
-    Args:
-        coins ([list]): list of the values of the coins in your possession
-        total ([number]): amount
-    Return: fewest number of coins needed to meet total
-    """
+    """determine the fewest number of coins needed to meet a given amount"""
     count, aux, i = 0, 0, 0
 
     coins.sort(reverse=True)
