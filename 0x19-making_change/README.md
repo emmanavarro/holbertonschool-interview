@@ -18,4 +18,4 @@
 *`0x19-making_change` is open source and therefore free to download and use without permission.*
 
 ##### Holberton School – Specializations - Interview Preparation ― Algorithms
-##### June, 2022. Colombia
+##### June, 2022.
