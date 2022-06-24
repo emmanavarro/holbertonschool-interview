@@ -5,7 +5,7 @@ Solution of the problem
 
 
 def makeChange(coins, total):
-    """determine the fewest number of coins needed to meet a given amount"""
+    """Determine the fewest number of coins needed to meet a given amount"""
     count, aux, i = 0, 0, 0
 
     coins.sort(reverse=True)
