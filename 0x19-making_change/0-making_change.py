@@ -14,21 +14,20 @@ def makeChange(coins, total):
         total ([number]): amount
     Return: fewest number of coins needed to meet total
     """
-    if total <= 0:
-        return 0
+    count, aux, i = 0, 0, 0
 
     coins.sort(reverse=True)
 
-    itr, ncoins = (0, 0)
-    cpy_total = total
-    len_coins = len(coins)
+    if total == 0:
+        return count
 
-    while(itr < len_coins and cpy_total > 0):
-        if (cpy_total - coins[itr]) >= 0:
-            cpy_total -= coins[itr]
-            ncoins += 1
+    while i < len(coins):
+        if coins[i] <= total and coins[i] + aux <= total:
+            count += 1
+            aux += coins[i]
         else:
-            itr += 1
+            i += 1
 
-    check = cpy_total > 0 and ncoins > 0
-    return -1 if check or ncoins == 0 else ncoins
+    if aux < total:
+        return -1
+    return count
