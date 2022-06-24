@@ -10,7 +10,7 @@ def makeChange(coins, total):
     determine the fewest number of coins
     needed to meet a given amount 'total'
     Args:
-        coins ([list]): a list of the values of the coins in your possession
+        coins ([list]): list of the values of the coins in your possession
         total ([number]): amount
     Return: fewest number of coins needed to meet total
     """
